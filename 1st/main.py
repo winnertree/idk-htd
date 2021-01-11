@@ -166,6 +166,8 @@
 # cabinet.clear()
 # print(cabinet)
 
+#리스트 [] // 사전 {:} // 튜플 () // 집합{}
+
 #튜플 // 변경되지 않는 값들들, 늘릴수없음
 # menu=("돈까스", "치즈까스")
 # print(menu[0])
@@ -361,7 +363,6 @@
 #     global gun #전역 공간에 있는 gun 사용
 #     gun = gun - soldiers
 #     print("the sum of guns : {0}".format(gun))
-#
 # checkpoint(2)
 # print("{}".format(gun))
 
@@ -531,31 +532,31 @@
 #     print("{0} 는 현재 클로킹 상태입니다".format(wraith2.name))
 
 #메소드
-class Unit:
-    def __init__(self, name, hp, damage):
-         self.name=name
-         self.hp=hp
-         self.damage=damage
-         print("{0} unit create".format(self.name))
-         print("hp {0}, damage {1}".format(self.hp,self.damage))
-
-class AttackUnit:
-    def __init__(self, name, hp, damage):
-         self.name=name
-         self.hp=hp
-         self.damage=damage
-    def attack(self, location):
-        print("{0} : {1}방향으로 공격 {2}damage".format(self.name, location, self.damage))
-
-    def damaged(self, damage):
-        print("{0} : {1} damaged".format(self.name,damage))
-        self.hp-=damage
-        print("{0} : now hp {1}".format(self.name,self.hp))
-        if self.hp<=0:
-            print("{0} destroyed".format(self.name))
-
-firebat1 =AttackUnit("firebat", 50 ,16)
-firebat1.attack("5시")
-
-firebat1.damaged(25)
-firebat1.damaged(25)
+# class Unit:
+#     def __init__(self, name, hp, damage):
+#          self.name=name
+#          self.hp=hp
+#          self.damage=damage
+#          print("{0} unit create".format(self.name))
+#          print("hp {0}, damage {1}".format(self.hp,self.damage))
+#
+# class AttackUnit:
+#     def __init__(self, name, hp, damage):
+#          self.name=name
+#          self.hp=hp
+#          self.damage=damage
+#     def attack(self, location):
+#         print("{0} : {1}방향으로 공격 {2}damage".format(self.name, location, self.damage))
+#
+#     def damaged(self, damage):
+#         print("{0} : {1} damaged".format(self.name,damage))
+#         self.hp-=damage
+#         print("{0} : now hp {1}".format(self.name,self.hp))
+#         if self.hp<=0:
+#             print("{0} destroyed".format(self.name))
+#
+# firebat1 =AttackUnit("firebat", 50 ,16)
+# firebat1.attack("5시")
+#
+# firebat1.damaged(25)
+# firebat1.damaged(25)
